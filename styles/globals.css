@@ -2,7 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'ff';
+    src: url('fonts/Epilogue-VariableFont_wght.ttf');
+}
 
 body {
-    font-family: 'Epilogue';
+    font-family: 'ff';
 }
