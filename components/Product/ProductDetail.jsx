@@ -42,7 +42,7 @@ function ProductDetail({product}) {
                         >
                           {
                             product.sizes.map(size => 
-                              <SelectItem value={size.name}>
+                              <SelectItem key={size.name} value={size.name}>
                                 {size.name}
                               </SelectItem>  
                             )

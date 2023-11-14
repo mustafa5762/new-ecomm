@@ -9,7 +9,7 @@ function ProductGrid({products}) {
     <div className='px-3 lg:px-16'>
         <div className="mt-20">
           <h1 className="text-4xl text-neutral-800 font-semibold">T-Shirts</h1>
-          <p className="text-neutral-600 mt-3 text-[15px] leading-relaxed lg:w-2/5">The easiest thing to wear and the most essential layer is a damn good tee shirt. Long or short sleeve tees, henleys, crew or v-necks - the best men's tees for any style.</p>
+          <p className="text-neutral-600 mt-3 text-[15px] leading-relaxed lg:w-2/5">The easiest thing to wear and the most essential layer is a damn good tee shirt. Long or short sleeve tees, henleys crew or v-necks the best men's tees for any style.</p>
         </div>
         <div className="mt-10">
           <div className="flex justify-between items-center">
