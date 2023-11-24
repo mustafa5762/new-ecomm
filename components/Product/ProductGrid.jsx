@@ -14,7 +14,7 @@ function ProductGrid({products}) {
         <div className="mt-10">
           <div className="flex justify-between items-center">
             <div className='flex items-center'>
-              <p className="text-neutral-600 text-sm font-medium"><span className="font-semibold">54</span> Products Found</p>
+              <p className="text-neutral-600 text-sm font-medium"><span className="font-semibold">{products.length}</span> Products Found</p>
             </div>
             <div className="flex items-center">
               <SortDropdown/>

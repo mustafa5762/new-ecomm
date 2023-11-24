@@ -2,11 +2,10 @@ import { Button, Select, SelectItem, Tooltip } from '@nextui-org/react'
 import React from 'react'
 import { ShoppingBasket } from 'lucide-react'
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
 
 function ProductDetail({product}) {
+
+  console.log(product)
   return (
     <div>
         <div className="px-3 lg:px-16 mt-20">
@@ -24,7 +23,7 @@ function ProductDetail({product}) {
                         {
                           product.colors.map(color => 
                             <Tooltip className='capitalize' key={color.name} content={color.name}>
-                              <Button className={`h-6 w-6 rounded-full min-w-0 ${color.class}`}></Button>  
+                              <Button className={`h-7 w-7 rounded-full min-w-0 px-unit-0 ${color.class}`}></Button>  
                             </Tooltip>
                           )
                         }

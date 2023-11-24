@@ -24,41 +24,43 @@ export default function Home({ product, error }) {
 export async function getServerSideProps() {
   const apiUrl = 'https://api-ap-south-1.hygraph.com/v2/cloriy67er8r301uqcs3x1fer/master';
   const query = `
-    query Product {
-      product(where: {slug: "ghoulishcottondelighttee"}) {
-        createdAt
-        dateAdded
-        description
-        featured
+  query MyQuery {
+    product(where: {slug: "codelifetee"}) {
+      category {
+        name
+        id
+      }
+      colors {
+        class
         id
         name
-        publishedAt
-        sdn
-        shortDescription
-        sizeDescription
-        slug
-        updatedAt
-        tags {
-          name
-        }
-        sizes {
-          name
-          inStock
-        }
-        prices {
-          country
-          price
-          sign
-        }
-        colors {
-          name
-          class
-          images {
-            url
-          }
-        }
       }
+      description
+      dateAdded
+      featured
+      id
+      name
+      prices {
+        price
+        sign
+      }
+      sdn
+      shortDescription
+      sizeDescription
+      sizes {
+        id
+        inStock
+        name
+      }
+      slug
+      tags {
+        name
+        id
+      }
+      updatedAt
     }
+  }
+  
   `;
 
   try {

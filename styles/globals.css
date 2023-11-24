@@ -10,3 +10,14 @@
 body {
     font-family: 'ff';
 }
+
+
+.bg-olive-green {
+    background-color:  #556B2F;
+}
+.bg-charcoal {
+    background-color:  #36454F;
+}
+.bg-navy-blue {
+    background-color:  #000080;
+}

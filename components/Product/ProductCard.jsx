@@ -14,7 +14,7 @@ export default function ProductCard({product}) {
               width="100%"
               alt="sfddf"
               className="w-full"
-              src="/img-test-5.png"
+              src={product.colors[0].images[0].url}
             />
           </CardBody>
           <CardFooter className="text-small justify-between px-6 py-4">
